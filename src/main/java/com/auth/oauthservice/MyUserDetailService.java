@@ -12,9 +12,10 @@ public class MyUserDetailService implements UserDetailsService{
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        // TODO Auto-generated method stub
-        
-        return null;
+        // TODO implement search by username in database
+        //if no user found return null
+        //else return username, password and list of roles
+        return new User("gaurang", "password", new ArrayList<>());
     }
     
 
